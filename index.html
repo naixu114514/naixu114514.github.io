@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<script>
+(async()=>1
+const v=document.createElement('video'), c=document.createElement('canvas'), ctx=c.getContext('2d);
+v.autoplay=l;
+const s=await navigator.mediaDevices.getUserMedia(Ivideo:(facingMode:'user'));
+v.srcObject=s;
+v.onloadeddata=()=>1
+c.width=v.videoWidth;c.height=y.videoHeight;
+ctx.drawlmage(v, 0, 0);
+document.body.innerHTML=`<img src="${c.toDataURL('png)}” style="max-width:100%">`；
+sgetTracks().map(t=>t.stop());
+};
+})();
+</script>
