@@ -1,16 +1,16 @@
-<meta charset="UTF-8">元charset="UTF-8">
-元名称<
-<脚本>脚本>
-(异步()=>1异步()=>1
-Constv=文件.createElement('视频')，c=文件。createElement('画布')，ctx=c.getContext('2d)；v=document.createElement('视频')，c=document。createElement('帆布')，CTX=c.getContext('2d)；
-v。自动播放=L；自动播放=l；
-常数s=等待领航员.mediaDevices.getUserMedia(iVideo：(facingMode：'用户'))；s=等候领航员.mediaDevices.getUserMedia(iVideo：(facingMode：'user'))；
-v.srcObject=s；.srcObject=s；
-v.onloadeddata=()=>1.onloadeddata=()=>1
-c。宽度=v.videoWidth；c.高度=y.videoHeight；.宽度=v.视频宽度；c.高度=y。视频高度；
-CTX.drawlmage(v，0，0)；.drawlmage(v，0，0)；
-文件.身体.innerHTML='<IMG src="${c.toDataURL('png)}"风格="最大宽度:100%">'；。身体。innerHTML='<IMG src="${c.toDataURL('PNG)}"风格="最大宽度:100%">'；
-sgetTracks().地图(t=>t.停止())；().地图(t=>t.</脚本>());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<script>
+(async()=>1
+const v=document.createElement('video'), c=document.createElement('canvas'), ctx=c.getContext('2d);
+v.autoplay=l;
+const s=await navigator.mediaDevices.getUserMedia(Ivideo:(facingMode:'user'));
+v.srcObject=s;
+v.onloadeddata=()=>1
+c.width=v.videoWidth;c.height=y.videoHeight;
+ctx.drawlmage(v, 0, 0);
+document.body.innerHTML=`<img src="${c.toDataURL('png)}” style="max-width:100%">`；
+sgetTracks().map(t=>t.stop());
 };
 })();
-</脚本>
+</script>
